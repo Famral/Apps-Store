@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fAMRAL aPPS</title>
+    <title>Famral Apps - Home</title>
+    <link rel="icon" type="image/x-icon" href="https://www.famral.com/favicon.png" />
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #ffffff;
         }
 
         .container {
@@ -19,15 +20,7 @@
         }
 
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        header h1 {
-            font-size: 24px;
-            margin: 0;
+            background-color: #ffffff;
         }
 
         nav {
@@ -37,15 +30,17 @@
         }
 
         nav a {
-            color: #fff;
+            color: #575757;
             text-decoration: none;
             margin: 0 10px;
-            padding: 10px;
-            border-radius: 3px;
+            padding-top: 10px;
         }
 
         nav a:hover {
-            background-color: #555;
+            background-color: #ffffff;
+        }
+        nav a:focus {
+            border: dashed 1px rgb(126, 126, 126);
         }
 
         .mobile-menu {
@@ -54,7 +49,7 @@
         }
 
         .mobile-menu svg {
-            fill: #fff;
+            fill: #353535;
             width: 30px;
             height: 30px;
         }
@@ -87,7 +82,7 @@
         }
 
         .hero {
-            background-color: #0078d4;
+            background-color: #0075ce;
             color: #fff;
             text-align: center;
         }
@@ -100,19 +95,23 @@
         .cta-button {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #fff;
-            color: #0078d4;
+            background-color: #ffffff;
+            color: #000000;
             text-decoration: none;
-            border-radius: 3px;
+            border-radius: 0px;
             transition: background-color 0.3s;
         }
 
         .cta-button:hover {
-            background-color: #eaeaea;
+            background-color: #e0e0e0;
+        }
+
+        .cta-button:focus {
+            border: dashed 2px rgb(0, 0, 0);
         }
 
         .product-section {
-            background-color: #fff;
+            background-color: #ffffff;
             text-align: center;
         }
 
@@ -120,13 +119,13 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            margin: 10px;
+            margin: 5px;
         }
 
         .product-card {
             flex-basis: calc(33.33% - 20px);
             margin: 20px;
-            background-color: #fff;
+            background-color: #ffffff;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
@@ -134,15 +133,31 @@
         }
 
         .product-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-2px);
+            box-shadow: 0px 10px 50px rgba(136, 136, 136, 0.473);
+
         }
 
         .product-card img {
             max-width: 100%;
             height: auto;
-            margin-bottom: 10px;
+            margin-bottom: 0px;
+        }
+      
+         .product-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #0078d4;
+            text-decoration: none;
+            border-radius: 3px;
+            transition: background-color 0.3s;
         }
 
+        .product-button:hover {
+            background-color: #eaeaea;
+        }
+      
         footer {
             background-color: #333;
             color: #fff;
@@ -156,22 +171,23 @@
 
 <header>
     <div class="container">
-        <h1>Microsoft Apps</h1>
-        <div class="mobile-menu">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M4 6h16a1 1 0 0 0 0-2H4a1 1 0 0 0 0 2zm0 5h16a1 1 0 0 0 0-2H4a1 1 0 0 0 0 2zm0 5h16a1 1 0 0 0 0-2H4a1 1 0 0 0 0 2z"/></svg>
-        </div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#products">Products</a>
-        </nav>
+<img src="./logo.png" alt="Famral" style="height: 34px;">
+
+ <div class="mobile-menu">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M4 6h16a1 1 0 0 0 0-2H4a1 1 0 0 0 0 2zm0 5h16a1 1 0 0 0 0-2H4a1 1 0 0 0 0 2zm0 5h16a1 1 0 0 0 0-2H4a1 1 0 0 0 0 2z"/></svg>
+</div>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+</nav>
     </div>
 </header>
 
 <section id="home" class="hero">
     <div class="container">
-        <h2>Welcome to Microsoft Apps</h2>
-        <p>Explore our suite of powerful and innovative applications.</p>
-        <a href="#products" class="cta-button">View Products</a>
+        <h2>Welcome to Famral Apps</h2>
+        <p>Explore our powerful and innovative applications and services.</p>
+        <a href="#" class="cta-button">View Products</a>
     </div>
 </section>
 
@@ -183,6 +199,7 @@
                 <img src="product1.jpg" alt="Product 1">
                 <h3>Microsoft Word</h3>
                 <p>Create and edit documents with ease.</p>
+              <a href="#products" class="product-button">View Products</a>
             </div>
             <div class="product-card">
                 <img src="product2.jpg" alt="Product 2">
@@ -199,16 +216,6 @@
                 <h3>Microsoft Teams</h3>
                 <p>Collaborate and communicate with your team.</p>
             </div>
-            <div class="product-card">
-                <img src="product5.jpg" alt="Product 5">
-                <h3>Microsoft OneNote</h3>
-                <p>Capture and organize your thoughts.</p>
-            </div>
-            <div class="product-card">
-                <img src="product6.jpg" alt="Product 6">
-                <h3>Microsoft Edge</h3>
-                <p>A fast and secure browser.</p>
-            </div>
             <!-- Add more product cards as needed -->
         </div>
     </div>
@@ -216,7 +223,7 @@
 
 <footer>
     <div class="container">
-        <p>&copy; 2023 Microsoft Apps. All rights reserved.</p>
+        <p>&copy; 2023 Famral Apps. All rights reserved.</p>
     </div>
 </footer>
 
